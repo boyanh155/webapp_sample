@@ -1,0 +1,186 @@
+/* Header */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+header {
+    /* font-weight: 700; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: black;
+    color: aliceblue;
+}
+
+.sticky {
+    background: #999;
+}
+
+body {
+    background: black;
+}
+
+.Logo img {
+    margin-top: 8px;
+    animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    /* transform: rotate(3deg); */
+    /* transform: rotate(0.3rad);/ */
+    /* transform: rotate(3grad); */
+    /* transform: rotate(.03turn);  */
+}
+
+.Logo {
+    flex: 1;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+.Menu {
+    flex: 2;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    color: #fff;
+    margin-top: 35px;
+}
+
+.Menu .Menu__Trademark {
+    height: 50px;
+    width: 100px;
+}
+
+.Menu .Menu__Store {
+    height: 50px;
+    width: 50px;
+}
+
+.Menu .Menu__Trademark:hover .Menu__Trademark__List {
+    visibility: visible;
+    transition: 0.3s all linear;
+    background: black;
+}
+
+.Menu__Trademark__List {
+    text-align: center;
+    position: fixed;
+    width: 90%;
+    top: 90px;
+    right: 5%;
+    border: 1px solid black;
+    padding: 20px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.Menu__Trademark__List:hover {
+    background: rgba(1, 1, 1, 1);
+}
+
+.List>li {
+    padding: 20px 0px 0px 0px;
+    text-align: left;
+}
+
+.Menu .Menu__Store:hover .Menu__Store__List {
+    visibility: visible;
+    background: black;
+}
+
+.Menu__Store__List {
+    position: fixed;
+    width: 80%;
+    top: 90px;
+    right: 10%;
+    border: 1px solid black;
+    padding: 10px 0px 10px 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.Menu__Store__List:hover {
+    background: black;
+}
+
+.Menu .Menu__Store ul {
+    padding-top: 20px;
+}
+
+.Other {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.Other li :hover {
+    color: #999;
+    text-decoration: #999;
+}
+
+.fa-search :hover {
+    color: #999;
+    text-decoration: #999;
+}
+
+.Other>.fa-search,
+.Other__User,
+.Other__shoopping-bag {
+    padding: 0 20px;
+}
+
+input[placeholder="search"] {
+    outline: none;
+    height: 40px;
+    border-radius: 30px 30px 30px 30px;
+    position: relative;
+    border: none;
+    background: black;
+    border: 1px solid rgb(250, 247, 247);
+    text-align: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.Other>.Other__Search .fa-search {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+}

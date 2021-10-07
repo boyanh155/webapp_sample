@@ -1,0 +1,72 @@
+/* Common */
+
+* {
+    z-index: 1;
+}
+
+.row:first {
+    justify-content: center;
+}
+
+
+/* mock header */
+
+
+/* Main */
+
+.categories {
+    background-color: #fff;
+    font-family: "Open Sans", "sans-serif";
+}
+
+.category {
+    margin: 50px 20px 0 20px;
+    background-image: url("https://cdn.shopify.com/s/files/1/0023/2941/1635/collections/1588823047_1588562796_11010964_10153120614462378_3628983263564616611_n_70d54a29-683e-4899-bee2-a0c34083b2f9_360x.jpg?v=1588823049");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    padding-top: 100%;
+    border-radius: 8px;
+}
+
+.category::after,
+.category::before {
+    border-radius: 8px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.category:hover {
+    cursor: pointer;
+}
+
+.category:hover .category__des {
+    transition: 0.3s all linear;
+    transform: scale(0.1);
+}
+
+.category:hover::after,
+.category:hover::before {
+    transition: 0.3s all linear;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.category__des {
+    font-size: 30px;
+    line-height: 28px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+}
