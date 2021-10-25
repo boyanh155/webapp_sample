@@ -5,235 +5,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home page</title>
     <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="stylesheet" href="./assets/css/categories.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-
-    <!-- gg-font -->
-    <!-- awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/mainhomepage.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- <div class="mock-header"></div> -->
-    <!-- Begin Header -->
-    <header class="Header">
-        <div class="Logo">
-            <a href="index.jsp"> <img src="image/logo_200x200.png" height="150" width="150" alt="Amazing" class="reponsive"></a>
-        </div>
-        <div class="Menu">
-            <li class="Menu__Trademark"><a href="">TRADEMARK</a>
-                <ul class="Menu__Trademark__List">
-                    <li class="Menu__Trademark__List__Babhabit"><a href="carteogory.html">Bad Habits</a>
-                        <ul class="List">
-                            <img src="image/logobadhabit.jpg" alt="" class="reponsive">
-                            <li> <a href="">T-SHIRT</a></li>
-                            <li><a href="">SHIRT</a></li>
-                            <li><a href="">OUTERWEAR</a></li>
-                            <li><a href="">HOODIES</a></li>
-                            <li><a href="">SHORT & PANTS</a></li>
-                        </ul>
-                    </li>
-                    <li class="Menu__Trademark__List__Dirtycoins"><a href="">Dirty Coins</a>
-                        <ul class="List">
-                            <img src="image/logodirtycoin.png" alt="" class="reponsive">
-                            <li><a href="">T-SHIRT</a></li>
-                            <li><a href="">SHIRT</a></li>
-                            <li><a href="">OUTERWEAR</a></li>
-                            <li><a href="">HOODIES</a></li>
-                            <li><a href="">SHORT & PANTS</a></li>
-                        </ul>
-                    </li>
-                    <li class="Menu__Trademark__List__UnCover"><a href="">Un Cover</a>
-                        <ul class="List">
-                            <img src="image/Logouncover.jpg" alt="" class="reponsive">
-                            <li><a href="">T-SHIRT</a></li>
-                            <li><a href="">SHIRT</a></li>
-                            <li><a href="">OUTERWEAR</a></li>
-                            <li><a href="">HOODIES</a></li>
-                            <li><a href="">SHORT & PANTS</a></li>
-                        </ul>
-                    </li>
-                    <li class="Menu__Trademark__List__DAVIES"><a href="">DAVIES</a>
-                        <ul class="List">
-                            <img src="image/logodavies.jpg" alt="" class="reponsive">
-                            <li><a href="">T-SHIRT</a></li>
-                            <li><a href="">SHIRT</a></li>
-                            <li><a href="">OUTERWEAR</a></li>
-                            <li><a href="">HOODIES</a></li>
-                            <li><a href="">SHORT & PANTS</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="Menu__Store"><a href="">STORE</a>
-                <ul class="Menu__Store__List">
-                    <li> <a>North</a>
-                        <ul class="List">
-                            <li><a href="">Hà Nội</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Central</a>
-                        <ul class="List">
-                            <li><a href="">Huế</a></li>
-                            <li><a href="">Đà Nẵng</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Southern</a>
-                        <ul class="List">
-                            <li><a href="">Hồ Chí Minh</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="Menu__Contact"><a href="">CONTACT</a></li>
-        </div>
-        <div class="Other">
-            <li class="Other__search">
-                <input class="Other__search__input" placeholder="search" type="text">
-                <i class="fa fa-search"></i>
-                <i class="fa fa-search hidden"></i>
-            </li>
-            <li class="Other__User">
-                <a class="fa fa-user" href=""></a>
-            </li>
-            <li class="Other__shoopping-bag">
-                <a class="fa fa-shopping-cart" href=""></a>
+    <div>
+        <div id="top">
+            <div class="grid">
+                <div id="top-content">
+                    <div class="row top-content__header">
+                        <div class="col l-3">
+                            <a href="">
+                                <img src="./assets/img/logo/logo-white.png" alt="Logo" class="header__logo">
+                            </a>
+                        </div>
+                        <div class="col l-4 l-o-5">
+                            <ul class="header__list">
+                                <li class="header__item">
+                                    <a href="#">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="#">
+                                        <span>About us</span>
+                                    </a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="#">
+                                        <span>Team</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <div class="grid wide">
+                            <div class="row">
+                                <div class="thumbnail__list">
+                                    <div class="thumbnail__item ">
+                                        <div class="col l-6 thumbnail__item-1">
+                                            <a href="">
+                                                <img src="./assets/img/img/jonny-gios-gBr5Hmx1STc-unsplash.jpg" alt="">
 
-        </div>
-    </header>
-    <!-- End Header -->
-    <div class="categories content-container">
-        <div class="grid wide">
-            <div class="row">
-                <div class="col l-4 m-6 c-12">
-                    <div class="category">
-                        <span class="category__des">Category</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail__item">
+                                        <div class="col l-6 thumbnail__item-2">
+                                            <a href="">
+                                                <img src="./assets/img/img/jonny-gios-gBr5Hmx1STc-unsplash.jpg" alt="">
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-                <div class="col l-4 m-6 c-12">
-                    <div class="category">
-                        <span class="category__des">Category</span>
-                    </div>
-                </div>
-                <!-- Tablet mất 1 item . Bổ sung -->
-                <div class="col l-4 m-0 c-12">
-                    <div class="category">
-                        <span class="category__des">Category</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col l-4 m-6 c-12">
-                    <div class="category">
-                        <span class="category__des">Category</span>
-                    </div>
-                </div>
-                <div class="col l-4 m-6 c-12">
-                    <div class="category">
-                        <span class="category__des">Category</span>
+                    <div class="top-about">
+                        <a class="about__hwbt" href="./ex.html">
+                            <span>Bài tập</span>
+                        </a>
+                        <a class="about__webbt" href="">
+                            <span>Trang web</span>
+                        </a>
+
                     </div>
                 </div>
             </div>
         </div>
+        <div id="aboutus"></div>
     </div>
-    <!-- Begin footer -->
-    <!-- footer 1 -->
-    <!-- <div class="footer">
-
-        <div class="line"></div>
-        <div class="grid wide footer__grid">
-            <div class="row footer__row1">
-                <div class="col l-3">
-                    <div class="footer__contact">
-                        <h1>SKULLCANDY VIỆT NAM</h1>
-                        <p>
-                            B1.00.01 Sarimi, 72 Nguyễn Cơ Thạch,
-                            <br> Phường An Lợi Đông, Quận 2, TP.HCM,
-                            <br> Việt Nam. 0799.848.919
-                        </p>
-                    </div>
-                </div>
-                <div class="col l-3">
-                    <div class="footet__sp">
-                        <h1>HỖ TRỢ</h1>
-                        <ul class="sp-list">
-                            <li class="sp-list__item">Liên hệ</li>
-                            <li class="sp-list__item">Chính sách bảo hành</li>
-                            <li class="sp-list__item">Chính sách giao hàng</li>
-                            <li class="sp-list__item">Chính sách đổi trả</li>
-                            <li class="sp-list__item">Cách thức đặt hàng</li>
-                            <li class="sp-list__item">Chính sách trả góp</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col l-3 l-o-3">
-                    <div class="footer__email">
-                        <h1>ĐĂNG KÝ EMAIL</h1>
-
-                        <form action="/index.html" method="POST" id="email__form">
-                            <input type="email" name="email" class="" placeholder="Nhập địa chỉ email">
-                            <button form="email_form" value="">ĐĂNG KÝ</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="line"></div>
-            <div class="row footer__row2">
-                <div class="col l-12">
-                    <div class="footer__icon">
-                        <i class="fab fa-facebook-square"></i>
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                </div>
-                <div class="col l-12" class="footer">
-                    <br>© 2021. Công ty TNHH Streamcast Asia Việt Nam. GPĐKKD số 0314516028 do Sở Kế Hoạch & Đầu Tư TP.HCM cấp ngày 14/07/2017.
-                    </br> Địa chỉ: 00.01 tháp B1 - Khu chung cư phức hợp lô M1, M2 (Sarimi), số 72 Nguyễn Cơ Thạch, P.An Lợi Đông, Q.2, TP.HCM. Điện thoại: 02866765010.</span>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- footer 2 -->
-    <!-------------------app---------------->
-    <footer>
-        <section class="app-container">
-            <p>Tải ứng dụng SARK</p>
-            <div class="app-google">
-                <a href=""> <img src="image/appstore.png"></a>
-                <a href=""> <img src="image/googleplay.png"></a>
-            </div>
-            <p>Nhận bản tin SARK</p>
-            <li> <input placeholder="Email" type="text">
-                <i class="fa fa-arrow-left" aria-current="true"></i>
-            </li>
-            </div>
-        </section>
-        <!-------------------footer---------------->
-        <div class="footer-top">
-            <li>
-                <a href="https://www.facebook.com/76storee"> <i class="fa fa-facebook-square" aria-hidden="true"></i></li>
-            <li><a href="">Liên Hệ</a></li>
-            <li><a href="">Tuyển Dụng</a></li>
-            <li><a href="">Giới Thiệu</a></li>
-            <li>
-                <a class="fa fa-instagram" href="https://www.instagram.com/hi_hungw/?fbclid=IwAR2rgxF_ygWB_qOWBVH2qe1bKdH2uPfFD3HdQ9lnuDyq_GX00t2HxIxbFJM"></a>
-            </li>
-            <li>
-                <a class="fa fa-youtube" href=""></a>
-            </li>
-        </div>
-        <div class="information">
-            <p>Shop bán hàng Online với số đăng ký kinh doanh: 0929468214 <br> Địa chỉ đăng ký: S5.02 VinHome Grand Park ,Đường Nguyễn Xiển , P.Long Thạnh Mỹ, Q.9, TP.HCM, Việt Nam - 092946821 <br> Đặt hàng online : <span>0929468214.</span>
-            </p>
-        </div>
-        <div class="footer-bottom">
-            <div>@SARK</div>
-        </div>
-    </footer>
+    <script src="./assets/js/mainhomepage.js"></script>
 </body>
 
 </html>

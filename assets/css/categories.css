@@ -60,6 +60,8 @@
 }
 
 .category__des {
+    transform: scale(1);
+    transition: all .3s ease-in-out;
     font-size: 30px;
     line-height: 28px;
     color: #fff;
